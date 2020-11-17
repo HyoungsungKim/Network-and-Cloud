@@ -87,3 +87,29 @@ MAC : Media Access Control
   - 브로드캐스트로 인한 성능 저하 발생
 - 멀티캐스트는 보내고자 하는 그룹 멤버들에게만 보냄
 - 라우터나 스위치에서 이 기능을 지원 해주어야만 쓸 수 있음
+
+## OSI 7 Layer
+
+- Application layer
+  - 전송 단위 : 데이터
+- Presentation layer
+  - 전송 단위 : 데이터
+- Session layer
+  - 전송 단위 : 데이터
+- Transport layer :
+  - 컨트롤과 에러 복구(e.g., TCP, UDP)
+  - 전송 단위 : 세그먼트
+- Network layer : 라우터
+  - 데이터를 목적지까지 안전하고 빠르게 전송
+  - 전송 단위 : 패킷
+- Data link layer : 스위치, 브리지
+  - 통신에서 오류 찾고 재전송하는 기능
+  - 맥 어드레스로 통신
+  - 전송 단위 : 프레임
+- Physical layer : 데이터 케이블, 허브
+  - 데이터 오류 확인하지 않고 0과 1로 전송
+  - 전송 단위 : 비트
+
+## 프로토콜
+
+인터넷을 사용하기 위해서는 모든 PC가 TCP/IP라는 프로토콜을 사용해야 함.
